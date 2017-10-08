@@ -13,8 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common XenonHD stuff.
+$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
@@ -25,7 +25,18 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := athene
-PRODUCT_NAME := lineage_athene
+PRODUCT_NAME := xenonhd_athene
 PRODUCT_BRAND := Motorola
 PRODUCT_MANUFACTURER := Motorola
 PRODUCT_RELEASE_NAME := athene
+
+# 3rd party apps
+PRODUCT_PACKAGES += \
+    AdAway \
+    MiXplorer
+
+# Root options
+ROOT_METHOD=magisk
+
+#Maintainer
+PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="Keerten"
