@@ -1,0 +1,18 @@
+[
+  {
+    "repository": "TeamHorizon/android_kernel_motorola_msm8952",
+    "target_path": "kernel/motorola/msm8952",
+    "branch": "o"
+  },
+  {
+    "repository": "TeamHorizon/proprietary_vendor_motorola_athene",
+    "target_path": "vendor/motorola",
+    "branch": "o"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-15.0"
+  }
+]
